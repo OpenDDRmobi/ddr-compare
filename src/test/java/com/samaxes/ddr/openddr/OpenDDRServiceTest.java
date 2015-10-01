@@ -56,8 +56,8 @@ public class OpenDDRServiceTest {
     public void getIdentificationService() {
         Service identificationService = service.getIdentificationService();
 
-        LOGGER.info("OpenDDR API Version: {}", identificationService.getAPIVersion());
-        LOGGER.info("OpenDDR Data Version: {}", identificationService.getDataVersion());
+        LOGGER.info("DeviceMap Simple DDR Version: {}", identificationService.getImplementationVersion());
+        LOGGER.info("DeviceMap Data Version: {}", identificationService.getDataVersion());
 
         assertNotNull(identificationService);
     }

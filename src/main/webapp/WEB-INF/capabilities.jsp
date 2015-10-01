@@ -70,7 +70,7 @@
                     <td>${requestScope.wurflCapability.resolutionWidth} / ${requestScope.wurflCapability.resolutionHeight}</td>
                 </tr>
                 <tr>
-                    <th colspan="2"><a href="http://www.openddr.org/">OpenDDR</a></th>
+                    <th colspan="2"><a href="http://devicemap.apache.org/">Apache DeviceMap DDR Simple</a></th>
                 </tr>
                 <tr>
                     <td><code>displayWidth</code> / <code>displayHeight</code></td>

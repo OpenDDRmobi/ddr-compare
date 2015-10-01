@@ -27,7 +27,7 @@ import javax.ejb.ConcurrencyManagementType;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 
-import org.openddr.simpleapi.oddr.ODDRService;
+import org.apache.devicemap.simpleddr.DDRService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.ddr.simple.Service;
@@ -54,13 +54,13 @@ public class OpenDDRService {
      */
     @PostConstruct
     private void start() {
-        LOGGER.info("Starting OpenDDR service.");
+        LOGGER.info("Starting DeviceMap DDR service.");
 
         try {
             Properties initializationProperties = new Properties();
             initializationProperties.load(OpenDDRService.class.getResourceAsStream("/openddr/oddr.properties"));
-            identificationService = ServiceFactory.newService("org.openddr.simpleapi.oddr.ODDRService",
-                    initializationProperties.getProperty(ODDRService.ODDR_VOCABULARY_IRI), initializationProperties);
+            identificationService = ServiceFactory.newService("org.apache.devicemap.simpleddr.DDRService",
+                    initializationProperties.getProperty(DDRService.ODDR_VOCABULARY_IRI), initializationProperties);
         } catch (IOException e) {
             LOGGER.error(e.getMessage(), e);
         } catch (InitializationException e) {

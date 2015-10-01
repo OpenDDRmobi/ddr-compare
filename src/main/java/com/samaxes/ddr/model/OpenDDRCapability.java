@@ -20,7 +20,7 @@ package com.samaxes.ddr.model;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.openddr.simpleapi.oddr.model.ODDRHTTPEvidence;
+import org.apache.devicemap.simpleddr.model.ODDRHTTPEvidence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.ddr.simple.Evidence;
@@ -33,7 +33,7 @@ import org.w3c.ddr.simple.exception.ValueException;
 import com.samaxes.ddr.openddr.OpenDDRService;
 
 /**
- * OpenDDR capabilities.
+ * DeviceMap DDR capabilities.
  */
 public class OpenDDRCapability {
 
