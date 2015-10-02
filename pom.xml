@@ -5,7 +5,7 @@
 
     <groupId>com.samaxes.ddr</groupId>
     <artifactId>ddr-compare</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>DDR Compare</name>
@@ -16,6 +16,16 @@
         <name>samaxes</name>
         <url>http://www.samaxes.com/</url>
     </organization>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.resourceEncoding>ISO-8859-1</project.build.resourceEncoding>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <devicemap.data.version>1.0.3</devicemap.data.version>
+        <devicemap.data.path>/temp/devicemap-data</devicemap.data.path>
+    </properties>
+    
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -217,7 +227,7 @@
        	<dependency>
 			<groupId>org.apache.devicemap</groupId>
 			<artifactId>devicemap-data</artifactId>
-			<version>1.0.3</version>
+			<version>${devicemap.data.version}</version>
 		</dependency>
         <dependency>
         	<groupId>org.apache.devicemap</groupId>
@@ -235,12 +245,4 @@
             <version>2.6</version>
         </dependency><!-- End OpenDDR dependencies -->
     </dependencies>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.resourceEncoding>ISO-8859-1</project.build.resourceEncoding>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <devicemap.data.path>/temp/devicemap-data</devicemap.data.path>
-    </properties>
 </project>
