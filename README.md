@@ -6,7 +6,7 @@ Companion code to go along with the blog post at http://www.samaxes.com/2012/10/
 
 DDR Compare uses the [Apache Maven](http://maven.apache.org/) build system. Building DDR Compare requires you to have it installed.
 
-Install [DeviceMap](http://devicemap.apache.org/) Maven dependencies into your local repository by executing the following script from inside the `lib` folder:
+Install [W3C DDR Simple API](http://www.w3.org/TR/DDR-Simple-API/) Maven dependencies for [DeviceMap](http://devicemap.apache.org/) into your local repository by executing the following script from inside the `lib` folder:
 
 * `install-libs.sh` for Linux
 * `install-libs.bat` for Windows
